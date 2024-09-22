@@ -1,3 +1,5 @@
+// Give me an input string that outputs a SHA-256 hash that starts with 00000 
+
 const crypto = require('crypto');
 
 function getHash(prefix){
