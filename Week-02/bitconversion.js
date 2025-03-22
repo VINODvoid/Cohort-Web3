@@ -75,3 +75,8 @@ function hexToArray(hexString) {
   const byteArrayFromHex = hexToArray(hex);
   console.log(byteArrayFromHex); // Output: Uint8Array(5) [72, 101, 108, 108, 111]
   
+
+//   BASE 64 - 6 bites
+const uint8Array = new Uint8Array([72, 101, 108, 108, 111]);
+const base64Encoded = Buffer.from(uint8Array).toString("base64");
+console.log(base64Encoded);
