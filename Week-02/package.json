@@ -1,0 +1,19 @@
+{
+  "name": "week-02",
+  "version": "1.0.0",
+  "main": "01basics.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node solanaKeyPair.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@noble/ed25519": "^2.2.3",
+    "@solana/web3.js": "^1.98.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
