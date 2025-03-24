@@ -8,7 +8,6 @@ const keypair = Keypair.generate();
 const publicKey = keypair.publicKey.toString();
 const secretKey = keypair.secretKey;
 
-// Display the keys
 console.log("Public Key:", publicKey);
 console.log("Private Key (Secret Key):", secretKey);
 
