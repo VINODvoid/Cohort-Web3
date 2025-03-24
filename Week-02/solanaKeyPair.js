@@ -20,5 +20,5 @@ const result = nacl.sign.detached.verify(
   signature,
   keypair.publicKey.toBytes(),
 );
-
+// Display result
 console.log(result);
