@@ -24,10 +24,10 @@ const WalletGenerator = () => {
 
 
 
-    const secretKey = nacl.sign.keyPair.fromSeed(derivedSeed).secretKey.slice(0,32);
-    const keypair = Keypair.fromSecretKey(secretKey)
+    const secretKey = nacl.sign.keyPair.fromSeed(derivedSeed);
+    const keypair = Keypair.fromSecretKey(secretKey.secretKey)
     setPublicKeys([...publicKeys,keypair.publicKey.toBase58()]);
-    setPrivateKeys([...privateKeys,Buffer.from(secretKey).toString('hex')]);
+    setPrivateKeys([...privateKeys,Buffer.from(keypair.secretKey).toString('hex')]);
     setCurrentIndex(currentIndex+1);
     }
     if(coin_type == "60")
