@@ -1,13 +1,9 @@
-
+import { RequestAirdrop } from "./components/RequestAirDrop"
 
 function App() {
-
-
-  
-
   return (
     <>
-    hi there
+    <RequestAirdrop/>
     </>
   )
 }
